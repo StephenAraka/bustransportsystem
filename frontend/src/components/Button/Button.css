@@ -1,0 +1,15 @@
+.Button {
+  border: 2px solid #f22a4f;
+  padding: .5rem 1rem;
+  background-color: #f22a4f;
+  color: #09475d;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.CancelBtn {
+  background-color: #09475d;
+  color: #ffffff;
+}

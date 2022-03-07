@@ -1,0 +1,20 @@
+.LoginLogo {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-family: montserrat, sans-serif;
+}
+
+.AppName {
+  font-weight: bold;
+  font-size: xx-large;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.TaxiImg {
+  width: 15rem;
+  height: 15rem;
+}
+
+

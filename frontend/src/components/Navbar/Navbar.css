@@ -1,0 +1,59 @@
+.Navbar {
+  position: absolute;
+  top: .5rem;
+  width: min(90%, 70.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar .Icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.MenuWrapper {
+  position: relative;
+}
+
+.DropdownMenu {
+  min-width: 6rem;
+  background-color: #09475d;
+  border: 1px solid black;
+  padding: .5rem 1.5rem;
+  position: absolute;
+  right: 10px;
+  display: grid;
+  gap: 1rem;
+}
+
+.DropdownItem {
+  color: #000000;
+}
+
+.DropdownItem a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.Tutorial {
+  padding: 1rem 1.5rem;
+  width: 10rem;
+  display: grid;
+  gap: 1rem;
+  position: absolute;
+  right: 10px;
+  background-color: #09475d;
+}
+
+.GotIt {
+  font-weight: bold;
+  color: #F44336;
+  cursor: pointer;
+}
+
+.Arrow {
+  position: absolute;
+  right: 0;
+  transform: rotate(-15deg);
+}

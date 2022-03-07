@@ -1,0 +1,96 @@
+@font-face {
+  font-family: lobster;
+  src: url("./assets/fonts/Lobster-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: sources-sans;
+  src: url("./assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url("./assets/fonts/montserrat-regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: sources-sans, sans-serif;
+  /* background: #dfefff; */
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #09475d;
+}
+
+  /* background: linear-gradient(192.32deg, #DFEFFF 0%, #2196F3 100%); */
+
+.Page {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+  flex-grow: 1;
+  padding: 5rem 0;
+}
+
+header {
+  padding: 2rem 0;
+  background: #ffffff;
+  text-align: center;
+  color: #09475d;
+  font-size: x-large;
+  font-weight: 900;
+  border-radius: 20px;
+}
+
+
+header div {
+  padding: 0 1rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-family: sources-sans, sans-serif;
+}
+
+.Form {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.FormTitle {
+  font-family: montserrat, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.AlternativeLink {
+  color: #000;
+}
+
+.AlternativeLink a {
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  color: #f22a4f;
+  font-weight: bold;
+}
+
+.Error {
+  color: #F44336;
+}
+
+@media screen and (min-width: 900px) {
+  .Page {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Form {
+    width: 30rem;
+    align-self: center;
+  }
+}

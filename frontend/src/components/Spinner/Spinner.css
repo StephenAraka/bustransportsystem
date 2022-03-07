@@ -1,0 +1,75 @@
+
+.Spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Spinner::after {
+  content: '';
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #34495e;
+  animation: loader 1.0s infinite ease-in-out;
+}
+
+.SpinnerContainer {
+  font-size: 1.5rem; 
+  font-style: italic;
+}
+
+/* For the big Spinner */
+@keyframes loader {
+  0% {
+    transform: scale(0);
+  }
+  100% { 
+      transform: scale(1.1); 
+      opacity: 0
+  }
+}
+
+/* For  the small spinner */
+.spinner {
+  animation: rotate 2s linear infinite;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+}
+
+.path {
+  stroke: #000000;
+  stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+.SmallSpinnerContainer {
+  width: 2rem;
+  height: 2rem; 
+}
