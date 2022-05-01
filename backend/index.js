@@ -5,6 +5,7 @@ const { User } = require('./models');
 const { Ride } = require('./models');
 const { Bus } = require('./models');
 const mongoose = require('mongoose');
+const { checkPassenger } = require('./Middleware')
 const cors = require('cors');
 const config = require('./config/config');
 
@@ -61,6 +62,7 @@ app.post('/api/users/login', async(req, res) => {
     // if (error) return res.status(400).send({ code: 400, details: error.details[0].message });
 
     // CHECK IF EMAIL EXISTS
+    console.log("oyaa")
     const user = await User.findOne({ email: req.body.email });
     if (!user) return res.status(400).send({ code: 400, details: 'Email or Password is invalid' });
 
@@ -92,7 +94,8 @@ app.get('/api/users/:userID', async(req, res) => {
 
 
 //! ----- ROUTES FOR RIDES ------
-app.post('/api/rides/request', async(req, res) => {
+app.post('/api/rides/request',checkPassenger,async(req, res) => {
+    console.log("hi1")
     const ride = new Ride({
         passenger: req.body.passenger,
         pickupTime: req.body.pickupTime,
