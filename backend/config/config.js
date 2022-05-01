@@ -1,6 +1,6 @@
-dbPassword = 'mongodb+srv://user:<password>@cluster0.1vxr7.mongodb.net/<database>?retryWrites=true&w=majority'
+dbPassword = 'mongodb+srv://SoftwareArc:Software1@cluster0.dcblh.mongodb.net/test'
 
 module.exports = {
-    'secret': '<password>',
+    'secret': 'Software1',
     mongoURI: dbPassword
 }
